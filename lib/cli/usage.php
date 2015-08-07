@@ -20,9 +20,10 @@ TestTemplateGeneratorByTSV
 Usage: {{exe_path}} <command> ...
 
     <command>
-    --generate   : テストテンプレートを生成する。既存のテストコードへの追記も行える。
-    --replace    : 既存のテストファイルの名前を修正する。
-    --tomarkdown : TSVファイルをマークダウン形式に変換する。
+    --generate   : テストテンプレートを生成する。既存のテストコードへの追記も行える。※追記は未実装
+    --replace    : 既存のテストファイルの名前を修正する。※未実装
+    --tomarkdown : TSVファイルをマークダウン形式に変換する。※未実装
+    --reflect    : テスト結果をテストコンディションの反映する。※未実装
 
 example: php {{exe_path}} --generate -s test/test.tsv -o output.txt -t template/junit.txt
 

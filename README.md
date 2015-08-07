@@ -1,6 +1,6 @@
 TestTemplateGeneratorByTSV
 =========================
-テストコンディションが列挙されたTSVファイルからテストコードのテンプレートを生成する。
+テストコンディションが列挙されたTSVファイルからテストコードのテンプレートを生成する。  
 ※まだgenerateの追加オプション無しのみしか実装してない
 
 ## Usage
@@ -9,9 +9,10 @@ TestTemplateGeneratorByTSV
 Usage: {{exe_path}} <command> ...
 
     <command>
-    --generate   : テストテンプレートを生成する。既存のテストコードへの追記も行える。
-    --replace    : 既存のテストファイルの名前を修正する。
-    --tomarkdown : TSVファイルをマークダウン形式に変換する。
+    --generate   : テストテンプレートを生成する。既存のテストコードへの追記も行える。※追記は未実装
+    --replace    : 既存のテストファイルの名前を修正する。※未実装
+    --tomarkdown : TSVファイルをマークダウン形式に変換する。※未実装
+    --reflect    : テスト結果をテストコンディションの反映する。※未実装
 
 example: php {{exe_path}} --generate -s test/input.tsv -o output.txt -t template/junit.txt
 
@@ -47,10 +48,13 @@ Usage: {{exe_path}} --replace -s <source_file> -o <output_file> -t <template_fil
 
 ## Example
 
+*command*
 ~~~
 > php {{exe_path}} --generate -s test/input.tsv -o test/output.txt -t template/junit.txt
+~~~
 
-(test/input.tsv)
+*test/input.tsv*
+~~~
 ## sum()
 no	method	context	option1	option2
 A001	sum()	with nothing	int res = sum();	res == 0
@@ -58,8 +62,10 @@ A002	sum()	with N	int res = sum(5);	res == 5
 A003	sum()	with N and M	int res = sum(3, 7);	res == 10
 B004	concat()	with "hoge" and "piyo"	string res = concat("hoge", "piyo");	res == "hogepiyo"
 B005	concat()	with ",#$23a" and "'#JAJD\"!"	string res = concat(",#$23a", "'#JAJD\"!");	res == ",#$23a'#JAJD\"!"
+~~~
 
-(test/output.txt)
+*test/output.txt*
+~~~
     @Test
     public void testA001__sum_with_nothing() {
         // method: sum()
