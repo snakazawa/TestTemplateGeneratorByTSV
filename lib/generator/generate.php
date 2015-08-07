@@ -22,10 +22,9 @@ class Generate {
      */
     protected static function put_body($tsv, $handle, $template) {
         foreach ($tsv['body'] as $row) {
-//            var_dump($row);
             $text = $template->convert($row);
             if ($text !== false) {
-                echo $text."\n\n";
+                File::write($handle, $text."\n\n");
             }
         }
     }

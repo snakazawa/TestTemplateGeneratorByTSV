@@ -1,0 +1,40 @@
+    @Test
+    public void testA001__sum_with_nothing() {
+        // method: sum()
+        // context: with nothing
+        // int res = sum();
+        // res == 0
+    }
+
+    @Test
+    public void testA002__sum_with_N() {
+        // method: sum()
+        // context: with N
+        // int res = sum(5);
+        // res == 5
+    }
+
+    @Test
+    public void testA003__sum_with_N_and_M() {
+        // method: sum()
+        // context: with N and M
+        // int res = sum(3, 7);
+        // res == 10
+    }
+
+    @Test
+    public void testB004__concat_with__hoge__and__piyo_() {
+        // method: concat()
+        // context: with "hoge" and "piyo"
+        // string res = concat("hoge", "piyo");
+        // res == "hogepiyo"
+    }
+
+    @Test
+    public void testB005__concat_with_____23a__and____JAJD____() {
+        // method: concat()
+        // context: with ",#$23a" and "'#JAJD\"!"
+        // string res = concat(",#$23a", "'#JAJD\"!");
+        // res == ",#$23a'#JAJD\"!"
+    }
+

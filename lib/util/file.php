@@ -51,4 +51,8 @@ class File {
 
         return ['header' => $header, 'body' => $body, 'collen' => $collen];
     }
+
+    public static function write($handle, $str) {
+        fputs($handle, $str);
+    }
 }
