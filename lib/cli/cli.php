@@ -1,16 +1,10 @@
 <?php
 
-namespace CLI;
+namespace nakazawa\ttgbtsv\CLI;
 
-use Generator\Generate;
-use Generator\Replace;
-use Util\File;
-
-require_once __DIR__.'/option.php';
-require_once __DIR__.'/usage.php';
-require_once __DIR__.'/../util/file.php';
-require_once __DIR__.'/../generator/generate.php';
-require_once __DIR__.'/../generator/replace.php';
+use nakazawa\ttgbtsv\Generator\Generate;
+use nakazawa\ttgbtsv\Generator\Replace;
+use nakazawa\ttgbtsv\Util\File;
 
 class CLI {
     public static $commands = ['--generate', '--replace'];

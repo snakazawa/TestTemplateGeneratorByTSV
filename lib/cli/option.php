@@ -1,6 +1,6 @@
 <?php
 
-namespace CLI;
+namespace nakazawa\ttgbtsv\CLI;
 
 class Option {
     public static $options = 'ao:s:t:';

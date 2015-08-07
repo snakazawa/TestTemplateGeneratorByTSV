@@ -1,6 +1,6 @@
 <?php
 
-namespace Util;
+namespace nakazawa\ttgbtsv\Util;
 
 class File {
     public static $handles = [];

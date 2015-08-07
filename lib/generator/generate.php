@@ -1,11 +1,8 @@
 <?php
 
-namespace Generator;
+namespace nakazawa\ttgbtsv\Generator;
 
-use Util\File;
-
-require_once __DIR__.'/../util/file.php';
-require_once __DIR__.'/template.php';
+use nakazawa\ttgbtsv\Util\File;
 
 class Generate {
     public static function run($opts) {

@@ -1,8 +1,6 @@
 <?php
 
-namespace Generator;
-
-require_once __DIR__.'/../util/file.php';
+namespace nakazawa\ttgbtsv\Generator;
 
 class Template {
     const NO = '{{no}}';

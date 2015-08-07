@@ -1,0 +1,15 @@
+{
+    "name": "nakazawa/test-template-generator-by-tsv",
+    "authors": [
+        {
+            "name": "snakazawa",
+            "email": "nakazawa.tms0314@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "nakazawa\\ttgbtsv\\": "lib/"
+        }
+    }
+}

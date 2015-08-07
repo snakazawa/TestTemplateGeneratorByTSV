@@ -1,6 +1,6 @@
 <?php
 
-namespace CLI;
+namespace nakazawa\ttgbtsv\CLI;
 
 class Usage {
     public static $messages = [];

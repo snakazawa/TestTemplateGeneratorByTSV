@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__.'/lib/cli/cli.php';
+require_once __DIR__.'/vendor/autoload.php';
 
-use CLI\CLI;
+use nakazawa\ttgbtsv\CLI\CLI;
 
 CLI::run($argc, $argv);
