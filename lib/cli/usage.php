@@ -44,7 +44,7 @@ TSVからテストテンプレートの生成する
 EOT;
 
 Usage::$messages['--replace'] = <<<EOT
-Usage: {{exe_path}} --generate -s <source_file> -o <output_file> -t <template_file> [options...]
+Usage: {{exe_path}} --replace -s <source_file> -o <output_file> -t <template_file> [options...]
 既存のテストファイルの名前を修正する。
 
     -s <source_file>  : テストコンディションが列挙されたTSVファイルを指定する。 (required)
