@@ -1,6 +1,7 @@
 ## sum()
-no  method   context option1 option2
-A001    sum()   with nothing    int res = sum();    res == 0
-A002    sum()   with N  int res = sum(5);   res == 5
-A003    sum()   with N and M    int res = sum(3, 7);    res == 10
-
+no	method	context	option1	option2
+A001	sum()	with nothing	int res = sum();	res == 0
+A002	sum()	with N	int res = sum(5);	res == 5
+A003	sum()	with N and M	int res = sum(3, 7);	res == 10
+B004	concat()	with "hoge" and "piyo"	string res = concat("hoge", "piyo");	res == "hogepiyo"
+B005	concat()	with ",#$23a" and "'#JAJD\"!"	string res = concat(",#$23a", "'#JAJD\"!");	res == ",#$23a'#JAJD\"!"

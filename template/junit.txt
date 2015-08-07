@@ -1,0 +1,6 @@
+    @Test
+    public void test{{no}}__{{{method}}}_{{{context}}}() {
+        // method: {{method}}
+        // context: {{context}}
+        // {{options}}
+    }

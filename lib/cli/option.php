@@ -3,7 +3,7 @@
 namespace CLI;
 
 class Option {
-    public static $options = 'ao:s:';
+    public static $options = 'ao:s:t:';
     public static $longopts = [
         'generate',
         'replace',
@@ -11,7 +11,7 @@ class Option {
     ];
 
     public static $requires = [
-        's', 'o'
+        's', 'o', 't'
     ];
 
     public static $defaults = [
