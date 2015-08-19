@@ -50,7 +50,7 @@ Usage: {{exe_path}} --replace -s <source_file> -o <output_file> -t <template_fil
 
 *command*
 ~~~
-> php {{exe_path}} --generate -s test/input.tsv -o test/output.txt -t template/junit.txt
+> php generator.php --generate -s test/input.tsv -o test/output.txt -t template/junit.txt
 ~~~
 
 *test/input.tsv*
